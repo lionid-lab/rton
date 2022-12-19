@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "lib/rton-tl",
+    "lib/rton-keys",
+    "lib/rton-adnl",
+    "bin/testcli",
+]
