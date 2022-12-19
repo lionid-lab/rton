@@ -5,4 +5,4 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1.23.0", features = ["full"] }
-rton-keys = { path = "../rton-keys" }
+rton-keys = { path = "../rton-keys", version = "0.1.0-alpha.1" }
