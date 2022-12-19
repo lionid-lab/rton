@@ -64,11 +64,11 @@ jobs:
           command: fmt
           args: --all -- --check
 
-      - name: Run cargo clippy
-        uses: actions-rs/cargo@v1
-        with:
-          command: clippy
-          args: -- -D warnings
+#       - name: Run cargo clippy
+#         uses: actions-rs/cargo@v1
+#         with:
+#           command: clippy
+#           args: -- -D warnings
   
   publish:
     name: Publish
