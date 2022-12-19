@@ -23,6 +23,7 @@ jobs:
           command: check
 
   test:
+    needs: [check]
     name: Test Suite
     runs-on: ubuntu-latest
     steps:
@@ -43,6 +44,7 @@ jobs:
 
   lints:
     name: Lints
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
@@ -68,6 +70,11 @@ jobs:
           command: clippy
           args: -- -D warnings
   
+  publish:
+    name: Publish
+    needs: [lints]
+    runs-on: ubuntu-latest
+    steps:
       - name: publish crates
         uses: katyo/publish-crates@v1
         with:
