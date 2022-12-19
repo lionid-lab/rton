@@ -2,6 +2,7 @@
 name = "testcli"
 version = "0.1.0"
 edition = "2021"
+publish = false
 
 [dependencies]
 rton-tl = { path = "../../lib/rton-tl", version = "0.1.0-alpha.1" }
