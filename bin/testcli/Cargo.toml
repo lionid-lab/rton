@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rton-tl = { path = "../../lib/rton-tl" }
+rton-tl = { path = "../../lib/rton-tl", version = "0.1.0-alpha.1" }
