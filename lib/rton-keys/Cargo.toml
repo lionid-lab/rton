@@ -2,6 +2,9 @@
 name = "rton-keys"
 version = "0.1.0-alpha.1"
 edition = "2021"
+license = "MIT"
+description = "A library for working with ton keys in Rust"
+publish = false
 
 [dependencies]
 curve25519-dalek = "4.0.0-pre.5"

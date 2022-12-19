@@ -2,6 +2,9 @@
 name = "rton-adnl"
 version = "0.1.0-alpha.1"
 edition = "2021"
+license = "MIT"
+description = "TON Adnl library"
+publish = false
 
 [dependencies]
 tokio = { version = "1.23.0", features = ["full"] }
